@@ -1,113 +1,625 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alles, was du über den Hijab wissen musst: Bedeutung, Geschichte, Arten, und häufige Fragen.">
-  <title>Hijab - Alles, was du wissen musst</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background: #7d8a7b;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      background: #f4f4f4;
-      padding: 10px 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section h2 {
-      color: #555;
-      margin-top: 0;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-    }
-    .faq {
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 5px;
-      margin: 20px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Umfassende Informationen über den Hijab: Bedeutung, Geschichte, Arten, kulturelle Bedeutung, und Antworten auf häufige Fragen.">
+    <title>Hijab - Alles, was du wissen musst</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background: #7d8a7b;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        
+        nav {
+            background: #f4f4f4;
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #7d8a7b;
+        }
+        
+        section {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid #eee;
+        }
+        
+        section:last-of-type {
+            border-bottom: none;
+        }
+        
+        section h2 {
+            color: #555;
+            margin-top: 0;
+            border-bottom: 2px solid #7d8a7b;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+        
+        .faq {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .faq h3 {
+            margin-top: 0;
+            color: #7d8a7b;
+        }
+        
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .img-placeholder {
+            background-color: #eee;
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            border-radius: 5px;
+        }
+        
+        blockquote {
+            border-left: 4px solid #7d8a7b;
+            padding-left: 20px;
+            margin-left: 0;
+            font-style: italic;
+            color: #555;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table th {
+            background-color: #f4f4f4;
+        }
+        
+        .testimonial {
+            background: #f0f5f0;
+            padding: 20px;
+            border-radius: 5px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+        
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 10px;
+        }
+        
+        .resources {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .footer-links {
+            margin: 15px 0;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background-color: #f0f5f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .timeline {
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: #7d8a7b;
+        }
+        
+        .timeline-item {
+            margin-left: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 10px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #7d8a7b;
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+        }
+        
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 10px;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+            
+            section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>Hijab - Alles, was du wissen musst</h1>
-</header>
-
-<nav>
-  <a href="#bedeutung">Bedeutung</a>
-  <a href="#geschichte">Geschichte</a>
-  <a href="#arten">Arten</a>
-  <a href="#faq">FAQ</a>
-</nav>
-
-<section id="bedeutung">
-  <h2>Was ist der Hijab?</h2>
-  <p>Der Hijab ist ein Kopftuch, das von muslimischen Frauen getragen wird, um ihre Haare, ihren Hals und oft auch die Schultern zu bedecken. Es symbolisiert Bescheidenheit, Frömmigkeit und die Identität der Trägerin.</p>
-</section>
-
-<section id="geschichte">
-  <h2>Geschichte des Hijabs</h2>
-  <p>Der Hijab hat eine lange Geschichte, die bis in die frühesten islamischen Gemeinschaften zurückreicht. Er wird im Koran erwähnt und wurde seitdem in verschiedenen Kulturen und Epochen unterschiedlich interpretiert und getragen.</p>
-</section>
-
-<section id="arten">
-  <h2>Arten von Hijabs</h2>
-  <ul>
-    <li><strong>Schal-Hijab:</strong> Ein rechteckiger Schal, der um den Kopf gewickelt wird.</li>
-    <li><strong>Al-Amira:</strong> Ein zweiteiliges Set aus einer Kappe und einem Schal.</li>
-    <li><strong>Chador:</strong> Ein großer Umhang, der den Körper bedeckt.</li>
-    <li><strong>Niqab:</strong> Ein Gesichtsschleier, der nur die Augen freilässt.</li>
-  </ul>
-</section>
-
-<section id="faq">
-  <h2>Häufig gestellte Fragen (FAQ)</h2>
-  <div class="faq">
-    <h3>Warum tragen Frauen den Hijab?</h3>
-    <p>Muslimische Frauen tragen den Hijab aus religiösen, kulturellen oder persönlichen Gründen. Er ist ein Ausdruck ihres Glaubens und ihrer Identität.</p>
-  </div>
-  <div class="faq">
-    <h3>Ist der Hijab im Islam verpflichtend?</h3>
-    <p>Die Interpretation der Pflicht variiert. Einige Gelehrte sehen den Hijab als religiöse Verpflichtung, während andere es als persönliche Wahl betrachten.</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Hijab Info. Alle Rechte vorbehalten.</p>
-</footer>
-
-</body>
-</html>
-
-<!-- Redeploy Test -->
-
+    <header>
+        <h1>Hijab - Alles, was du wissen musst</h1>
+        <p>Ein umfassender Leitfaden zu Geschichte, Bedeutung und kulturellen Aspekten</p>
+    </header>
+    
+    <nav>
+        <a href="#bedeutung">Bedeutung</a>
+        <a href="#geschichte">Geschichte</a>
+        <a href="#arten">Arten</a>
+        <a href="#religioeseGrundlagen">Religiöse Grundlagen</a>
+        <a href="#kulturell">Kulturelle Aspekte</a>
+        <a href="#moderner-hijab">Moderner Hijab</a>
+        <a href="#kontroversen">Kontroversen</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    
+    <section id="bedeutung">
+        <h2>Was ist der Hijab?</h2>
+        <p>Der Begriff "Hijab" stammt aus dem Arabischen (حجاب) und bedeutet wörtlich übersetzt "Vorhang", "Schleier" oder "Bedeckung". Im islamischen Kontext bezeichnet der Hijab sowohl das Konzept der Bescheidenheit und Privatsphäre als auch speziell das Kopftuch, das von muslimischen Frauen getragen wird.</p>
+        
+        <div class="highlight">
+            <p><strong>Mehrfache Bedeutungsebenen:</strong></p>
+            <ul>
+                <li><strong>Physische Dimension:</strong> Ein Kleidungsstück, das Kopf, Haar, Hals und oft die Schultern bedeckt</li>
+                <li><strong>Spirituelle Dimension:</strong> Symbol für Bescheidenheit, Frömmigkeit und Gottesbewusstsein (Taqwa)</li>
+                <li><strong>Soziale Dimension:</strong> Ausdruck der religiösen und kulturellen Identität</li>
+                <li><strong>Persönliche Dimension:</strong> Individuelle Entscheidung und Form des Selbstausdrucks</li>
+            </ul>
+        </div>
+        
+        <p>Der Hijab geht über ein bloßes Kleidungsstück hinaus und umfasst ein umfassendes Konzept von Bescheidenheit, das für viele muslimische Frauen sowohl äußere Erscheinung als auch innere Werte betrifft. Das Tragen des Hijabs kann als sichtbares Zeichen der islamischen Identität, als spirituelle Praxis oder als persönliche Entscheidung verstanden werden.</p>
+        
+        <blockquote>
+            "Der Hijab ist nicht nur ein Stück Stoff auf meinem Kopf. Er ist Teil meiner Identität, meines Glaubens und meiner Lebensweise. Er erinnert mich ständig an meine Verbindung zu Gott und an meine Werte." - Zeitgenössische muslimische Perspektive
+        </blockquote>
+        
+        <div class="img-container">
+            <img src="/api/placeholder/400/250" alt="Verschiedene Hijab-Stile" />
+        </div>
+    </section>
+    
+    <section id="geschichte">
+        <h2>Geschichte des Hijabs</h2>
+        <p>Die Geschichte des Hijabs erstreckt sich über mehr als 1400 Jahre islamischer Geschichte und hat vielfältige kulturelle, politische und religiöse Entwicklungen durchlaufen.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-year">Vorislamische Zeit:</span>
+                <p>Kopfbedeckungen waren bereits vor dem Islam in verschiedenen Kulturen im Nahen Osten und im Mittelmeerraum verbreitet. In der byzantinischen, persischen und jüdischen Tradition trugen Frauen unterschiedliche Formen von Kopfbedeckungen als Zeichen ihres sozialen Status und ihrer Bescheidenheit.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">7. Jahrhundert:</span>
+                <p>Mit der Offenbarung des Korans und dem Entstehen des Islams wurden spezifische Verse (wie in Sure 24:31 und 33:59) offenbart, die allgemein als Grundlage für den Hijab interpretiert werden. Die Frauen des Propheten Muhammad (Ummahat al-Mu'minin - die "Mütter der Gläubigen") begannen, sich zu bedecken.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">Mittelalter (8.-15. Jahrhundert):</span>
+                <p>Mit der Ausbreitung des Islams entwickelten sich regional unterschiedliche Formen der Verschleierung. In verschiedenen islamischen Reichen (Umayyaden, Abbasiden, Fatimiden, etc.) wurden unterschiedliche Praktiken befolgt, oft beeinflusst von lokalen Traditionen und kulturellen Normen.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">Osmanisches Reich (14.-20. Jahrhundert):</span>
+                <p>Verschiedene Formen der Verhüllung waren verbreitet, darunter der "Yaşmak" (ein zweiteiliger Schleier) und der "Ferace" (ein langer Mantel). Die Praxis variierte je nach Region, sozialer Klasse und städtischem/ländlichem Kontext.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">Kolonialzeit (19.-20. Jahrhundert):</span>
+                <p>Während der europäischen Kolonialherrschaft in muslimischen Ländern wurde der Hijab oft zum Symbol des kulturellen Widerstands. Gleichzeitig begannen Modernisierungsbewegungen in manchen Ländern, traditionelle Kleidung in Frage zu stellen.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">Frühe bis mittlere 20. Jahrhundert:</span>
+                <p>In mehreren Ländern gab es Bewegungen zur "Entschleierung". In der Türkei unter Atatürk, im Iran unter Reza Schah Pahlavi und in Ägypten wurde das Tragen des Hijabs teilweise eingeschränkt oder verboten als Teil von Modernisierungsbemühungen.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">Islamische Wiederbelebung (1970er-1990er):</span>
+                <p>Im Zuge der islamischen Wiederbelebungsbewegungen kehrten viele Frauen zum Hijab zurück, oft als bewusste Entscheidung und politisches Statement. Nach der Iranischen Revolution 1979 wurde der Hijab dort verpflichtend.</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="timeline-year">21. Jahrhundert:</span>
+                <p>Der Hijab ist heute Teil globaler Debatten über religiöse Freiheit, kulturelle Identität und Frauenrechte. In einigen Ländern gibt es Einschränkungen (wie in Frankreich in öffentlichen Schulen), während in anderen sein Tragen verpflichtend ist. Gleichzeitig entwickelt sich der Hijab als Modestatement mit einer wachsenden Industrie für islamische Mode.</p>
+            </div>
+        </div>
+        
+        <p>Die Geschichte des Hijabs zeigt, dass seine Bedeutung und Praxis stets im Wandel waren und stark von politischen, sozialen und kulturellen Faktoren beeinflusst wurden. Was als einfaches religiöses Gebot begann, hat sich zu einem komplexen Symbol entwickelt, das unterschiedliche Bedeutungen für verschiedene Menschen und Gemeinschaften haben kann.</p>
+    </section>
+    
+    <section id="arten">
+        <h2>Arten von Hijabs</h2>
+        <p>Es gibt eine große Vielfalt an Kopfbedeckungen und Verhüllungsstilen in der muslimischen Welt, die je nach Region, Kultur, persönlichem Geschmack und religiöser Interpretation variieren.</p>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Beschreibung</th>
+                <th>Herkunft/Verbreitung</th>
+            </tr>
+            <tr>
+                <td>Klassischer Hijab</td>
+                <td>Ein rechteckiger oder quadratischer Schal, der um Kopf, Hals und Schultern gewickelt wird und das Haar vollständig bedeckt. Die Gesichtsform bleibt sichtbar.</td>
+                <td>Weit verbreitet, global</td>
+            </tr>
+            <tr>
+                <td>Al-Amira</td>
+                <td>Ein zweiteiliges Set bestehend aus einer eng anliegenden Kopfkappe und einem darüber getragenen röhrenförmigen Schal. Besonders praktisch und beliebt bei jungen Frauen und Mädchen.</td>
+                <td>Modern, global verbreitet</td>
+            </tr>
+            <tr>
+                <td>Shayla</td>
+                <td>Ein länglicher Schal, der locker um den Kopf gewickelt und mit einer Nadel unter dem Kinn befestigt wird. Ein Ende hängt oft über die Schulter oder den Rücken.</td>
+                <td>Golfregion, besonders VAE</td>
+            </tr>
+            <tr>
+                <td>Khimar</td>
+                <td>Eine kapuzenartige Bedeckung, die über den Kopf gezogen wird und bis zur Hüfte oder darüber hinaus reichen kann. Sie bedeckt Kopf, Hals, Schultern und Oberkörper.</td>
+                <td>Naher Osten, Nordafrika</td>
+            </tr>
+            <tr>
+                <td>Chador</td>
+                <td>Ein großes, halbkreisförmiges Tuch, das über Kopf und Körper gelegt wird und den ganzen Körper vom Kopf bis zu den Füßen bedeckt. Das Gesicht bleibt dabei frei.</td>
+                <td>Iran, Teile des Irak</td>
+            </tr>
+            <tr>
+                <td>Abaya</td>
+                <td>Ein locker sitzender, langer schwarzer Mantel, der den ganzen Körper bedeckt. Wird oft mit einem Hijab oder Niqab kombiniert.</td>
+                <td>Golfstaaten, Saudi-Arabien</td>
+            </tr>
+            <tr>
+                <td>Niqab</td>
+                <td>Ein Gesichtsschleier, der zusammen mit einem Kopftuch getragen wird und nur die Augen freilässt. Oft mit einer Abaya kombiniert.</td>
+                <td>Arabische Halbinsel, Teile Nordafrikas</td>
+            </tr>
+            <tr>
+                <td>Burka</td>
+                <td>Ein Ganzkörpergewand, das auch das Gesicht vollständig bedeckt, mit einem Gitter- oder Netzstoff vor den Augen, durch den die Trägerin sehen kann.</td>
+                <td>Afghanistan, Teile Pakistans</td>
+            </tr>
+            <tr>
+                <td>Batula/Batoolah</td>
+                <td>Eine traditionelle Gesichtsmaske aus Stoff oder Leder, die besonders die Nase und Oberlippe bedeckt.</td>
+                <td>VAE, Oman, Katar</td>
+            </tr>
+            <tr>
+                <td>Jilbab</td>
+                <td>Ein langer, locker sitzender Mantel oder Kleid, das den ganzen Körper außer Händen, Füßen und Gesicht bedeckt.</td>
+                <td>Indonesien, Ostafrika</td>
+            </tr>
+            <tr>
+                <td>Dupatta</td>
+                <td>Ein langer Schal, der oft locker über Kopf und Schultern getragen wird. Teil der traditionellen südasiatischen Kleidung.</td>
+                <td>Südasien (Pakistan, Indien)</td>
+            </tr>
+            <tr>
+                <td>Turban-Hijab</td>
+                <td>Ein moderner Stil, bei dem der Stoff um den Kopf gewickelt wird, um einen turbanähnlichen Look zu erzeugen.</td>
+                <td>Modern, global bei jüngeren Frauen</td>
+            </tr>
+        </table>
+        
+        <p>Bei der Wahl des Hijab-Stils spielen verschiedene Faktoren eine Rolle:</p>
+        <ul>
+            <li><strong>Kultureller Hintergrund:</strong> Regionale Traditionen beeinflussen den bevorzugten Stil</li>
+            <li><strong>Persönliche Interpretation:</strong> Unterschiedliche Verständnisse der religiösen Anforderungen</li>
+            <li><strong>Praktische Überlegungen:</strong> Klima, Aktivitäten, Beruf</li>
+            <li><strong>Mode und Ästhetik:</strong> Persönlicher Geschmack und aktuelle Trends</li>
+            <li><strong>Gesellschaftliche Normen:</strong> Lokale Erwartungen und soziale Kontexte</li>
+        </ul>
+        
+        <div class="img-container">
+            <img src="/api/placeholder/400/300" alt="Verschiedene Hijab-Arten im Vergleich" />
+        </div>
+    </section>
+    
+    <section id="religioeseGrundlagen">
+        <h2>Religiöse Grundlagen des Hijabs</h2>
+        <p>Die religiösen Grundlagen für das Tragen des Hijabs im Islam basieren auf Versen im Koran sowie auf Hadithen (überlieferte Aussagen und Handlungen des Propheten Muhammad). Die Interpretation dieser Quellen variiert jedoch zwischen verschiedenen islamischen Rechtsschulen und Gelehrten.</p>
+        
+        <h3>Koranische Grundlagen</h3>
+        <p>Die beiden wichtigsten Koranverse, die im Zusammenhang mit dem Hijab stehen, sind:</p>
+        
+        <blockquote>
+            "Und sprich zu den gläubigen Frauen, dass sie ihre Blicke senken und ihre Scham bewahren und ihren Schmuck nicht zur Schau tragen sollen, bis auf das, was davon sichtbar sein darf, und dass sie ihre Tücher (Khumur) über ihren Busen ziehen sollen und ihren Schmuck nicht offen zeigen..." (Sure 24, Vers 31)
+        </blockquote>
+        
+        <blockquote>
+            "O Prophet! Sprich zu deinen Frauen und deinen Töchtern und zu den Frauen der Gläubigen, dass sie ihre Übergewänder (Jalabib) um sich ziehen. So ist es am ehesten gewährleistet, dass sie erkannt und nicht belästigt werden..." (Sure 33, Vers 59)
+        </blockquote>
+        
+        <h3>Hadith-Überlieferungen</h3>
+        <p>Mehrere Hadithe berichten über die Praxis der Verhüllung zur Zeit des Propheten Muhammad. Beispielsweise wird berichtet, dass Aisha sagte: "Als der Vers der Verhüllung herabgesandt wurde, rissen die Frauen Teile ihrer Gewänder ab und bedeckten sich damit."</p>
+        
+        <h3>Interpretation durch Rechtsschulen</h3>
+        <p>Die vier großen sunnitischen Rechtsschulen (Hanafi, Maliki, Shafi'i und Hanbali) sowie die schiitische Ja'fari-Rechtsschule haben unterschiedliche Ansichten darüber, welche Körperteile bedeckt werden müssen:</p>
+        
+        <ul>
+            <li><strong>Übereinstimmung:</strong> Fast alle Gelehrten stimmen darin überein, dass Frauen nach der Pubertät ihre Haare, ihren Hals, ihre Schultern und ihren Oberkörper vor nicht-mahram Männern (Männer, die nicht eng verwandt sind) bedecken sollen.</li>
+            <li><strong>Unterschiede:</strong> Es gibt unterschiedliche Meinungen darüber, ob das Gesicht, die Hände und die Füße bedeckt werden müssen. Die meisten klassischen Gelehrten der Hanafi-Schule erlauben beispielsweise, dass Gesicht und Hände unbedeckt bleiben dürfen.</li>
+        </ul>
+        
+        <h3>Moderne Interpretationen</h3>
+        <p>In der heutigen Zeit gibt es eine Vielfalt an Interpretationen:</p>
+        <ul>
+            <li><strong>Traditionelle Ansicht:</strong> Betont die klare religiöse Pflicht zur Bedeckung</li>
+            <li><strong>Reformistische Ansicht:</strong> Einige moderne Gelehrte interpretieren die koranischen Verse im historischen Kontext und betonen die Absicht (Bescheidenheit) über die spezifische Form</li>
+            <li><strong>Feministische islamische Perspektive:</strong> Betont die persönliche Wahl und kontextualisiert die Texte im Licht moderner Gleichheitsprinzipien</li>
+        </ul>
+        
+        <div class="highlight">
+            <h3>Wichtiger Hinweis zur Freiheit der Interpretation</h3>
+            <p>Obwohl viele Gelehrte den Hijab als religiöse Pflicht sehen, ist es wichtig zu betonen, dass letztendlich jede Frau ihre eigene Beziehung zu Gott hat und ihre eigene informierte Entscheidung treffen muss. Im Islam gibt es den Grundsatz "Es gibt keinen Zwang im Glauben" (Sure 2, Vers 256), und religiöse Praktiken sollten aus Überzeugung erfolgen.</p>
+        </div>
+    </section>
+    
+    <section id="kulturell">
+        <h2>Kulturelle Aspekte des Hijabs</h2>
+        <p>Der Hijab ist nicht nur ein religiöses Symbol, sondern auch ein kulturelles Phänomen mit vielfältigen Bedeutungen und Ausdrucksformen in verschiedenen Gesellschaften.</p>
+        
+        <h3>Regionale Variationen</h3>
+        <p>Die Art und Weise, wie der Hijab getragen wird, variiert stark zwischen verschiedenen Regionen:</p>
+        <ul>
+            <li><strong>Nordafrika:</strong> Bunte, oft kunstvoll drapierte Hijabs, besonders in Marokko und Tunesien</li>
+            <li><strong>Naher Osten:</strong> Von einfachen Hijabs in Jordanien bis zu strengeren Formen in Saudi-Arabien</li>
+            <li><strong>Türkei:</strong> Oft modisch interpretiert mit vielfältigen Stilen und Bindetechniken</li>
+            <li><strong>Südostasien:</strong> In Malaysia und Indonesien farbenfrohe Hijabs, oft mit lokalen Stoffen und Mustern</li>
+            <li><strong>Südasien:</strong> Integration mit traditionellen Kleidungsstücken wie Dupatta in Pakistan und Indien</li>
+            <li><strong>Westafrika:</strong> Kombinationen mit traditionellen farbenfrohen Stoffen und Wickeltechniken</li>
+        </ul>
+        
+        <h3>Soziale Bedeutung</h3>
+        <p>Je nach kulturellem Kontext kann der Hijab verschiedene soziale Bedeutungen haben:</p>
+        <ul>
+            <li><strong>Identitätsmarker:</strong> Sichtbares Zeichen der religiösen Zugehörigkeit</li>
+            <li><strong>Statuszeichen:</strong> In manchen Gesellschaften ein Zeichen für Bildung oder soziale Klasse</li>
+            <li><strong>Geschlechterbeziehungen:</strong> Definition von Grenzen und Räumen zwischen Geschlechtern</li>
+            <li><strong>Gruppenzugehörigkeit:</strong> Stärkung des Gemeinschaftsgefühls unter muslimischen Frauen</li>
+        </ul>
+        
+        <div class="testimonial">
+            "Mein Hijab verbindet mich mit meinen marokkanischen Wurzeln, auch wenn ich in Europa lebe. Die Art, wie ich ihn binde und die Farben, die ich wähle, sind Teil meiner kulturellen Identität - eine Brücke zwischen meinen verschiedenen Welten."
+            <div class="testimonial-author">- Fatima, 28, Deutsch-Marokkanerin</div>
+        </div>
+        
+        <h3>Hijab und Politik</h3>
+        <p>In vielen Kontexten ist der Hijab auch ein politisches Symbol geworden:</p>
+        <ul>
+            <li><strong>Koloniale Geschichte:</strong> Symbol des Widerstands gegen kulturelle Entfremdung</li>
+            <li><strong>Islamische Wiederbelebung:</strong> Statement gegen westlichen Kulturimperialismus</li>
+            <li><strong>Feministische Bewegungen:</strong> Von manchen als Befreiung von westlichen Schönheitsidealen interpretiert</li>
+            <li><strong>Staatspolitik:</strong> In manchen Ländern gefördert oder verboten als Teil staatlicher Identitätspolitik</li>
+        </ul>
+        
+        <h3>Wirtschaftliche Dimension</h3>
+        <p>Mit der wachsenden globalen muslimischen Bevölkerung und steigendem Wohlstand hat sich auch ein bedeutender Markt für islamische Mode entwickelt:</p>
+        <ul>
+            <li>Die globale islamische Modeindustrie wird auf über 270 Milliarden US-Dollar geschätzt</li>
+            <li>Entstehung internationaler Labels, die sich auf bescheidene Mode spezialisieren</li>
+            <li>Integration islamischer Mode in den Mainstream mit Modeschauen und Kampagnen großer Marken</li>
+            <li>Aufstieg muslimischer Influencerinnen und Mode-Bloggerinnen</li>
+        </ul>
+        
+        <div class="img-container">
+            <img src="/api/placeholder/400/250" alt="Hijab-Modetrends aus verschiedenen Regionen" />
+        </div>
+    </section>
+    
+    <section id="kontroversen">
+        <h2>Kontroversen und Debatten</h2>
+        <p>Der Hijab steht im Zentrum verschiedener gesellschaftlicher und politischer Debatten, sowohl in muslimischen als auch in nicht-muslimischen Gesellschaften.</p>
+        
+        <h3>Gesetzliche Einschränkungen</h3>
+        <p>In einigen Ländern gibt es Einschränkungen für das Tragen des Hijabs:</p>
+        <ul>
+            <li><strong>Frankreich:</strong> Verbot religiöser Symbole in staatlichen Schulen seit 2004; Verbot der Vollverschleierung (Burka/Niqab) im öffentlichen Raum seit 2011</li>
+            <li><strong>Belgien:</strong> Verbot der Vollverschleierung im öffentlichen Raum</li>
+            <li><strong>Dänemark:</strong> Verbot der Gesichtsverschleierung im öffentlichen Raum</li>
+            <li><strong>Österreich:</strong> Verbot der Vollverschleierung in der Öffentlichkeit</li>
+            <li><strong>Schweiz:</strong> Kantonal unterschiedliche Regelungen; in einigen Kantonen Verschleierungsverbote</li>
+            <li><strong>Weitere Länder:</strong> Verschiedene Einschränkungen in Schulen, öffentlichen Einrichtungen oder bestimmten Berufen</li>
+        </ul>
+        
+        <h3>Verpflichtungen zum Tragen</h3>
+        <p>In anderen Ländern gibt es Verpflichtungen zum Tragen bestimmter Formen der Verschleierung:</p>
+        <ul>
+            <li><strong>Iran:</strong> Gesetzliche Pflicht zum Tragen des Hijabs seit der Islamischen Revolution 1979</li>
+            <li><strong>Saudi-Arabien:</strong> Traditionell strenge Kleidungsvorschriften, die jedoch in jüngster Zeit etwas gelockert wurden</li>
+            <li><strong>Afghanistan:</strong> Unter Taliban-Herrschaft Pflicht zur Vollverschleierung</li>
+        </ul>
+        
+        <h3>Argumentationslinien in der Debatte</h3>
+        <table>
+            <tr>
+                <th>Für Einschränkungen des Hijabs</th>
+                <th>Gegen Einschränkungen des Hijabs</th>
+            </tr>
+            <tr>
+                <td>Förderung der Gleichstellung der Geschlechter</td>
+                <td>Religionsfreiheit und persönliche Autonomie</td>
+            </tr>
+            <tr>
+                <td>Sicherheitsbedenken (bei Vollverschleierung)</td>
+                <td>Kulturelle Vielfalt und Multikulturalismus</td>
+            </tr>
+            <tr>
+                <td>Förderung der Assimilation/Integration</td>
+                <td>Schutz vor Diskriminierung und Islamophobie</td>
+            </tr>
+            <tr>
+                <td>Laizität und Trennung von Religion und Staat</td>
+                <td>Selbstbestimmungsrecht der Frau</td>
+            </tr>
+        </table>
+        
+        <h3>Feministische Perspektiven</h3>
+        <p>Innerhalb feministischer Diskurse gibt es unterschiedliche Haltungen zum Hijab:</p>
+        <ul>
+            <li><strong>Kritische Perspektive:</strong> Sieht den Hijab als Ausdruck patriarchalischer Kontrolle über Frauen</li>
+            <li><strong>Islamischer Feminismus:</strong> Betont die freie Wahl und interpretiert den Hijab als Befreiung von Objektifizierung</li>
+            <li><strong>Intersektionaler Ansatz:</strong> Berücksichtigt die Überschneidung von Religion, Kultur, Geschlecht und Rasse/Ethnie</li>
+        </ul>
+        
+        <div class="highlight">
+            <h3>Wichtige Differenzierung</h3>
+            <p>Bei allen Debatten über den Hijab ist es wichtig, zwischen diesen Aspekten zu unterscheiden:</p>
+            <ol>
+                <li>Freiwilliges Tragen des Hijabs als persönliche religiöse Entscheidung</li>
+                <li>Sozialer Druck innerhalb von Gemeinschaften</li>
+                <li>Staatlich durchgesetzte Kleiderordnungen (sowohl für als auch gegen den Hijab)</li>
+            </ol>
+            <p>Diese Differenzierung hilft, die Komplexität der Frage zu verstehen und die Autonomie der betroffenen Frauen in den Mittelpunkt zu stellen.</p>
+        </div>
+    </section>
+    
+    <section id="moderner-hijab">
+        <h2>Der Hijab in der modernen Welt</h2>
+        <p>In der heutigen globalisierten Welt hat der Hijab neue Bedeutungen angenommen und wird in verschiedenen Kontexten neu interpretiert.</p>
+        
+        <h3>Modische Entwicklung</h3>
+        <p>Der Hijab hat sich zu einem modischen Statement entwickelt:</p>
+        <ul>
+            <li><strong>Hijab-Influencer:</strong> Prominente muslimische Influencerinnen, die moderne Hijab-Stile präsentieren</li>
+            <li><strong>Luxus-Hijabs:</strong> Designer-Hijabs von bekannten Modehäusern</li>
+            <li><strong>Innovative Materialien:</strong> Atmungsaktive, sportliche und funktionale Hijabs</li>
+            <li><strong>Styling-Techniken:</strong> Zahlreiche YouTube-Tutorials für kreative Bindetechniken</li>
+            <li><strong>"Modest Fashion":</strong> Integration in die breitere Bewegung für bescheidene Mode</li>
+        </ul>
+        
+        <h3>Hijab im Sport</h3>
+        <p>Die Teilnahme von Hijab-tragenden Frauen am Sport hat zugenommen:</p>
+        <ul>
+            <li><strong>Sportliche Hijabs:</strong> Entwicklung spezieller Sport-Hijabs durch Marken wie Nike, Adidas und Under Armour</li>
+            <li><strong>Olympische Athletinnen:</strong> Zunehmende Präsenz von Hijab-tragenden Athletinnen bei den Olympischen Spielen</li>
+            <li><strong>Regeländerungen:</strong> Internationale Sportverbände wie FIFA und FIBA haben ihre Regeln angepasst, um das Tragen des Hijabs zu erlauben</li>
+            <li><strong>Vorbilder:</strong> Ibtihaj Muhammad (US-Fechterin), Dalilah Muhammad (US-Leichtathletin) und andere professionelle Athletinnen mit Hijab inspirieren junge Frauen</li>
+        </ul>
+        
+        <h3>Digitale Repräsentation</h3>
+        <p>Der Hijab findet zunehmend Eingang in die digitale Kultur:</p>
+        <ul>
+            <li><strong>Emojis:</strong> Einführung von Hijab-Emojis in gängigen Betriebssystemen</li>
+            <li><strong>Gaming:</strong> Spielfiguren mit Hijab-Option in beliebten Videospielen</li>
+            <li><strong>Social Media:</strong> Große Communities und Hashtags wie #HijabFashion mit Millionen von Beiträgen</li>
+            <li><strong>Apps:</strong> Spezielle Apps für Hijab-Styling und islamische Mode</li>
+        </ul>
+        
+        <h3>Berufsleben und Hijab</h3>
+        <p>Im professionellen Umfeld gibt es sowohl Herausforderungen als auch positive Entwicklungen:</p>
+        <ul>
+            <li><strong>Unternehmensrichtlinien:</strong> Zunehmende Anpassung von Unternehmensrichtlinien für religiöse Kleidung</li>
+            <li><strong>Berufskleidung:</strong> Integration des Hijabs in Uniformen (Polizei, Militär, Gesundheitswesen)</li>
+            <li><strong>Netzwerke:</strong> Berufliche Netzwerke für muslimische Frauen</li>
+            <li><strong>Repräsentation:</strong> Zunehmende Sichtbarkeit in Führungspositionen und verschiedenen Branchen</li>
+        </ul>
+        
+        <div class="testimonial">
+            "Als ich vor 15 Jahren mit dem Hijab anfing im Finanzsektor zu arbeiten, war ich oft die einzige. Heute sehe ich viel mehr Vielfalt und Akzeptanz. Der Hijab hat meine Karriere nicht eingeschränkt - er hat mir geholfen, authentisch zu bleiben."
+            <div class="testimonial-author">- Aisha, 42, Investmentbankerin</div>
+        </div>
+        
+        <h3>Junge Generation und Hijab</h3>
+        <p>Die jüngere Generation muslimischer Frauen entwickelt oft ein neues Verhältnis zum Hijab:</p>
+        <ul>
+            <li><strong>Hybride Identitäten:</strong> Integration religiöser Praktiken in moderne Lebensstile</li>
+            <li><strong>Kreativität:</strong> Experimentieren mit Stilen, Farben und Ausdrucksformen</li>
+            <li><strong>Online-Communities:</strong> Austausch und Unterstützung in sozialen Netzwerken</li>
+            <li><strong>Aktivismus:</strong> Engagement für das Recht, den Hijab zu tragen oder nicht zu tragen</li>
+        </ul>
+        
+        <div class="img-container">
+            <img src="/api/placeholder/400/250" alt="Moderne Hijab-Styles junger Frauen" />
+        </div>
